@@ -39,9 +39,20 @@
             <h1>ALEXIS AARÓN CASTILLO MILIÁN</h1>
             <h2>Computing Science</h2>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                 <!-- Facebook -->
+                <a href="https://www.facebook.com/alonsito.miliancito/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+    
+                 <!-- Instagram -->
+                <a href="https://www.instagram.com/alexis_castmi_24/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+    
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/alexis-castillo-milian-3709a8319/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -50,7 +61,12 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mí</h2>
-            <p><span>Hola, Soy ALEXIS CASTILLO MILIÁN.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eligendi maiores delectus, et inventore ipsam laborum, recusandae nostrum obcaecati labore reprehenderit illum veniam repellat praesentium cumque saepe deserunt tempora molestias.</p>
+            <p><span>Hola, Soy Alexis Castillo Milián,</span> estudiante de Computación Científica en la Universidad Nacional Mayor de San Marcos. Estoy en formación en áreas de programación, matemáticas aplicadas y resolución de problemas.
+                
+            Me interesa aprender y aplicar mis conocimientos en desarrollo de software, análisis de datos, inteligencia artificial, simulación científica, con el objetivo de seguir creciendo como profesional.
+            
+            Actualmente busco fortalecer mis habilidades en programación, modelado matemático y trabajo en proyectos prácticos, que me permitan aplicar lo aprendido y adquirir experiencia.
+            </p>
 
             <div class="fila">
                 <!-- datos personales -->
@@ -71,7 +87,7 @@
                         </li>
                         <li>
                             <strong>Git Hub</strong>
-                            www.example.com
+                            https://github.com/alexiscasmi
                         </li>
                         <li>
                             <strong>Dirección</strong>
@@ -155,7 +171,7 @@
                     </div>
                 
                     <div class="skill">
-                        <span>Photoshop</span>
+                        <span>Python</span>
                         <div class="barra-skill">
                             <div class="progreso"><span>95%</span></div>
                         </div>
@@ -169,7 +185,7 @@
                     </div>
                 
                     <div class="skill">
-                        <span>Drupal</span>
+                        <span>Power Bi</span>
                         <div class="barra-skill">
                             <div class="progreso"><span>55%</span></div>
                         </div>
@@ -230,7 +246,7 @@
                         <h4>Computación Científica</h4>
                         <span class="casa">Universidad Nacional Mayor de San Marcos</span>
                         <span class="fecha">2023 - Actualidad</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, voluptatem dicta. Neque repellendus, quo pariatur impedit reiciendis libero laborum nulla ut vitae, aperiam voluptates labore aliquid unde consequatur natus ad.</p>
+                        <p>Carrera centrada en la aplicación de la matemática, programación y métodos numéricos para resolver problemas científicos y tecnológicos.</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
@@ -340,46 +356,52 @@
         </div>
     </section>
 
-    <!--Sección Contacto-->
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!--Formulario-->
-                <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número Teléfonico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
-                </div>
-                <!--Mapa-->
-                <div class="col mapa">
-                    <img src="img/ubicacion.png" alt="Mapa">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Perú , Lima - Santa Anita (Jr. Los Robles 387)
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                Llamanos: +51 924312197
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: acastillomilian7@gmail.com
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<!--Sección Contacto-->
+<section id="contacto" class="contacto">
+  <div class="contenido-seccion">
+    <h2>CONTACTO</h2>
+    <div class="fila">
+      <!--Formulario-->
+      <div class="col">
+        <form action="https://formsubmit.co/el/wezoyi" method="POST">
+          <input type="text" name="nombre" placeholder="Tú Nombre" required>
+          <input type="text" name="telefono" placeholder="Número Teléfonico" required>
+          <input type="email" name="correo" placeholder="Dirección de correo" required>
+          <input type="text" name="tema" placeholder="Tema" required>
+          <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+          
+          <!-- Honeypot (anti-spam) -->
+          <input type="text" name="_honey" style="display:none">
+
+          <!-- reCAPTCHA activado (se gestiona en FormSubmit automáticamente) -->
+          <input type="hidden" name="_captcha" value="true">
+
+          <button type="submit">
+            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+            <span class="overlay"></span>
+          </button>
+        </form>
+      </div>
+
+      <!--Mapa-->
+      <div class="col mapa">
+        <img src="img/ubicacion.png" alt="Mapa">
+        <div class="info">
+          <ul>
+            <li>
+              <i class="fa-solid fa-mobile-screen"></i>
+              Llamanos: +51 924312197
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              Email: acastillomilian7@gmail.com
+            </li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!--Footer-->
     <footer>
@@ -387,13 +409,15 @@
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/alonsito.miliancito/" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/alexis_castmi_24/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/alexis-castillo-milian-3709a8319/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </footer>
 
     <script src="script.js"></script>
+
+
 
 </body>
 </html>
