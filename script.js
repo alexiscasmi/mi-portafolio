@@ -109,7 +109,7 @@ if(form){
 
         // Insertar en Supabase
         const { error } = await supabaseClient
-            .from("contactos")  // 👈 tu tabla en Supabase
+            .from("contacto")  // 👈 tu tabla en Supabase
             .insert([{ nombre, telefono, correo, tema, mensaje }]);
 
         if (error) {
@@ -122,4 +122,5 @@ if(form){
             form.reset();
         }
     });
+
 }
