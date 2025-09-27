@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!--Menú Encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Alexis</a>
+            </div>
+            <nav id="nav"> 
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="javascript:void(0);" onclick="seleccionar(); scrollYAnimar('#skills');">SKILLS</a>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--Sección Inicio-->
+    |<section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/chico.jpg" alt="Foto de perfil">
+            </div>
+            <h1>ALEXIS AARÓN CASTILLO MILIÁN</h1>
+            <h2>Computing Science</h2>
+            <h3>Desarrollador Web</h3>
+            <div class="redes">
+                 <!-- Facebook -->
+                <a href="https://www.facebook.com/alonsito.miliancito/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+    
+                 <!-- Instagram -->
+                <a href="https://www.instagram.com/alexis_castmi_24/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+    
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/alexis-castillo-milian-3709a8319/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <!--Git Hub-->
+                <a href="https://github.com/alexiscasmi" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--Sección Sobre Mí-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, Soy Alexis Castillo Milián,</span> estudiante de Computación Científica en la Universidad Nacional Mayor de San Marcos. Estoy en formación en áreas de programación, matemáticas aplicadas y resolución de problemas.
+                
+            Me interesa aprender y aplicar mis conocimientos en desarrollo de software, análisis de datos, inteligencia artificial, simulación científica, con el objetivo de seguir creciendo como profesional.
+            
+            Actualmente busco fortalecer mis habilidades en programación, modelado matemático y trabajo en proyectos prácticos, que me permitan aplicar lo aprendido y adquirir experiencia.
+            </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                 <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            02-01-2004
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +51 924312197
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            acastillomilian7@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Lima, Perú
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                 </div>
+
+                 <!--intereses-->
+                 <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span> 
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span> 
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span> 
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span> 
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span> 
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span> 
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span> 
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span> 
+                        </div>
+                        
+                    </div>
+                 </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección Skills -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skills -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso"><span>75%</span></div>
+                        </div>
+                    </div>
+                
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso"><span>89%</span></div>
+                        </div>
+                    </div>
+                
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso"><span>95%</span></div>
+                        </div>
+                    </div>
+                
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso"><span>81%</span></div>
+                        </div>
+                    </div>
+                
+                    <div class="skill">
+                        <span>Power Bi</span>
+                        <div class="barra-skill">
+                            <div class="progreso"><span>55%</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso"><span>80%</span></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso"><span>70%</span></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso"><span>99%</span></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso"><span>65%</span></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Project Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso"><span>94%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Sección Curriculum-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Computación Científica</h4>
+                        <span class="casa">Universidad Nacional Mayor de San Marcos</span>
+                        <span class="fecha">2023 - Actualidad</span>
+                        <p>Carrera centrada en la aplicación de la matemática, programación y métodos numéricos para resolver problemas científicos y tecnológicos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curso de Programación en Python</h4>
+                        <span class="casa">Universidad Nacional de Ingeniería</span>
+                        <span class="fecha">2025</span>
+                        <p>Formación en programación estructurada y orientada a objetos, manejo de colecciones y librerías estándar, desarrollo de scripts de automatización, e introducción a la gestión y conexión con bases de datos para aplicaciones prácticas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curso de Ciberseguridad: Ethical Hacking (C|EH)</h4>
+                        <span class="casa">Universidad Nacional de Ingeniería</span>
+                        <span class="fecha">2025</span>
+                        <p>Conocimientos fundamentales en seguridad informática y pruebas de penetración, incluyendo reconocimiento, análisis de vulnerabilidades, técnicas de explotación y buenas prácticas para el aseguramiento de sistemas y redes.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de Trabajo</h3>
+                    <div class="item der">
+                        <h4>Desarrollo Web</h4>
+                        <span class="casa">Proyectos Personales</span>
+                        <span class="fecha">2025</span>
+                        <p>Creación de páginas web responsivas y dinámicas como proyectos personales y de emprendimiento, utilizando HTML, CSS y JavaScript. Integración de bases de datos y APIs en aplicaciones web para gestionar información en tiempo real. Experiencia en el despliegue de proyectos en GitHub Pages y en la implementación de funcionalidades interactivas orientadas a la experiencia del usuario.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Creación de documentos científicos en LaTeX</h4>
+                        <span class="casa">Independiente</span>
+                        <span class="fecha">2024 - Actualidad</span>
+                        <p>Elaboración de informes, artículos y trabajos académicos con estructura profesional y formato científico en LaTeX. Manejo de referencias bibliográficas (BibTeX), fórmulas matemáticas, tablas, figuras y presentaciones (Beamer) para publicaciones y presentaciones académicas.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Gestión de Bases de Datos</h4>
+                        <span class="casa">Independiente</span>
+                        <span class="fecha">2025</span>
+                        <p>Conocimientos en gestión básica de bases de datos relacionales (MySQL, PostgreSQL, SQLite), incluyendo diseño de tablas, consultas SQL y conexión con aplicaciones web.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Sección Portafolio-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Sección Contacto-->
+<section id="contacto" class="contacto">
+  <div class="contenido-seccion">
+    <h2>CONTACTO</h2>
+    <div class="fila">
+      <!--Formulario-->
+      <div class="col">
+        <form id="contactForm">
+          <input id="nombre" type="text" name="nombre" placeholder="Tú Nombre" required>
+          <input id="telefono" type="text" name="telefono" placeholder="Número Teléfonico" required>
+          <input id="correo" type="email" name="correo" placeholder="Dirección de correo" required>
+          <input id="tema" type="text" name="tema" placeholder="Tema" required>
+          <textarea id="mensaje" name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+
+          <button type="submit">
+            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+            <span class="overlay"></span>
+          </button>
+        </form>
+        <!--Estado-->
+        <p id="status"></p>
+      </div>
+
+      <!--Mapa-->
+      <div class="col mapa">
+        <img src="img/ubicacion.png" alt="Mapa">
+        <div class="info">
+          <ul>
+            <li>
+              <i class="fa-solid fa-mobile-screen"></i>
+              Llamanos: +51 924312197
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              Email: acastillomilian7@gmail.com
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!--Footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/alonsito.miliancito/" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/alexis_castmi_24/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/alexis-castillo-milian-3709a8319/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/alexiscasmi" target="_blank"><i class="fa-brands fa-github"></i>
+        </div>
+    </footer>
+
+    <!--JS de Supabase-->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
